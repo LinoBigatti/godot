@@ -52,6 +52,7 @@ class SpinBox : public Range {
 
 	String prefix;
 	String suffix;
+	double arrow_step = 0.0;
 
 	void _line_edit_input(const Ref<InputEvent> &p_event);
 
@@ -95,6 +96,8 @@ public:
 	bool get_update_on_text_changed() const;
 
 	void apply();
+	void set_arrow_step(const double p_arrow_step);
+	double get_arrow_step() const;
 
 	SpinBox();
 };
