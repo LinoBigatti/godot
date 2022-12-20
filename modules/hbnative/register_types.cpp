@@ -6,6 +6,8 @@
 #include "ph_audio_stream_editor.h"
 #include "ph_audio_stream_preview.h"
 #include "ph_singleton.h"
+#include "multi_spin_box.h"
+
 #include "process/process.h"
 #include "process/process_tiny_process_lib.h"
 #ifdef UNIX_ENABLED
@@ -37,6 +39,7 @@ void register_hbnative_types() {
 	ClassDB::register_virtual_class<PHNative>();
 	Engine::get_singleton()->add_singleton(Engine::Singleton("PHAudioStreamPreviewGenerator", PHAudioStreamPreviewGenerator::get_singleton()));
 	Engine::get_singleton()->add_singleton(Engine::Singleton("PHNative", PHNative::get_singleton()));
+	ClassDB::register_class<MultiSpinBox>();
 }
 
 void unregister_hbnative_types() {

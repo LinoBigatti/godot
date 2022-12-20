@@ -547,7 +547,13 @@ void fill_default_theme(Ref<Theme> &theme, const Ref<Font> &default_font, const 
 
 	theme->set_icon("updown", "SpinBox", make_icon(spinbox_updown_png));
 
-	//scroll container
+	// Multi spin box
+	
+	theme->set_icon("updown", "MultiSpinBox", make_icon(spinbox_updown_png));
+	theme->set_icon("error", "MultiSpinBox", make_icon(error_sign_png));
+	theme->set_icon("warning", "MultiSpinBox", make_icon(warning_sign_png));
+
+	// Scroll container
 	Ref<StyleBoxEmpty> empty;
 	empty.instance();
 	theme->set_stylebox("bg", "ScrollContainer", empty);

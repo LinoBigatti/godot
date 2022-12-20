@@ -1145,6 +1145,9 @@ Ref<Theme> create_editor_theme(const Ref<Theme> p_theme) {
 	// SpinBox
 	theme->set_icon("updown", "SpinBox", theme->get_icon("GuiSpinboxUpdown", "EditorIcons"));
 
+	// MultiSpinBox
+	theme->set_icon("updown", "MultiSpinBox", theme->get_icon("GuiSpinboxUpdown", "EditorIcons"));
+
 	// ProgressBar
 	theme->set_stylebox("bg", "ProgressBar", make_stylebox(theme->get_icon("GuiProgressBar", "EditorIcons"), 4, 4, 4, 4, 0, 0, 0, 0));
 	theme->set_stylebox("fg", "ProgressBar", make_stylebox(theme->get_icon("GuiProgressFill", "EditorIcons"), 6, 6, 6, 6, 2, 1, 2, 1));
